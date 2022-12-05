@@ -1,4 +1,4 @@
-# Interactive Lightcurve explorer
+# Interactive Lightcurve Explorer
 
 This tool makes light curve visualization more simple. 
 It takes a cleaned event list as input, from three common HEASARC missions: NICER, NUSTAR and XMM-Newton.

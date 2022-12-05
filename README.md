@@ -20,7 +20,7 @@ Widgets events key (ex, 'Esc' to reset) where left to their default behaviour ac
 
 
 # Usage
-`python3 hid.py evt1 [evt2]`
+`python3 hid.py evt1 [evt2 evt3 ...]`
 
-where **evt1** (and **evt2**) are cleaned event lists from the mentioned xray missions.
-When two event list are given and are from the same mission, they will be joined.
+where **evt1** and **evtX** are cleaned event lists from the mentioned xray missions.
+When two or more event list **from the same mission** are given, they will be joined.

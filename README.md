@@ -1,4 +1,4 @@
-# Interactive-HID
+# Interactive Lightcurve explorer
 
 This tool makes light curve visualization more simple. 
 It takes a cleaned event list as input, from three common HEASARC missions: NICER, NUSTAR and XMM-Newton.
@@ -13,6 +13,12 @@ lightcurves, using the time bin defined on the 'time bin slider'. This HID also 
 Widgets events key (ex, 'Esc' to reset) where left to their default behaviour according to matplotlib docs.
 
 # Prerequisites
-- Python 3.6 or higher
-- Stingray : https://docs.stingray.science/install.html
-- Numpy
+- Python 3.6+
+- [Stingray](https://docs.stingray.science/install.html) 
+- [Numpy](https://numpy.org/doc/stable/)
+
+# Usage
+> `python3 hid.py evt1 [evt2]`
+
+where *evt1* (and *evt2*) are cleaned event lists from the mentioned xray missions.
+When two event list are given and are from the same mission, they will be joined.

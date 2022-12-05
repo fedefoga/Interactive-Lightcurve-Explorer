@@ -11,3 +11,8 @@ On the bttom right panel it will display the hardness-intensity diagram (HID), w
 lightcurves, using the time bin defined on the 'time bin slider'. This HID also can be modified by moving the 'Cutoff Energy slider' to see how the spectral shape changes.
 
 Widgets events key (ex, 'Esc' to reset) where left to their default behaviour according to matplotlib docs.
+
+# Prerequisites
+- Python 3.6 or higher
+- Stingray : https://docs.stingray.science/install.html
+- Numpy

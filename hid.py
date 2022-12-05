@@ -155,14 +155,16 @@ if __name__ == "__main__":
     input_data = sys.argv[1:]
     if len(input_data)==1: 
         events = EventList.read(sys.argv[1], 'hea')
-    elif len(input_data)==2:
-        evA = EventList.read(sys.argv[1], 'hea')
-        evB = EventList.read(sys.argv[2], 'hea')
-        if evA.mission != evB.mission : 
+    elif len(input_data)>=2:
+	missions = [EventList.read(sys.argv[1], 'hea').mission for k in range(len(input_data))]
+	if len(np.unique(missions))!=1: 
             print('Event lists from different missions!')
             print('Cannot join. Exit.')
             sys.exit()
-        events = evA.join(evB)
+	events = EventList.read(sys.argv[1], 'hea')
+	for k in range(2,len(input_data)):
+        	evt = EventList.read(sys.argv[k], 'hea')
+        	events = events.join(evt)
     else:
         print('Please enter at least 1 HEASoft event list. Exit.')
         sys.exit()

@@ -1,5 +1,7 @@
 # Interactive Lightcurve Explorer
 
+![Preview](fig2.jpg)
+
 This tool makes light curve visualization more simple. 
 It takes a cleaned event list as input, from three common NASA/ESA missions: *NICER*, *NUSTAR* and *XMM-Newton*.
 
@@ -11,6 +13,7 @@ On the bottom right panel it will display the hardness-intensity diagram (HID), 
 lightcurves, using the time bin defined on the 'time bin slider'. This HID also can be modified by moving the 'Cutoff Energy slider' to see how the spectral shape changes.
 
 # Prerequisites
+
 - Python 3.6+
 - Matplotlib 
 - Numpy
@@ -22,3 +25,4 @@ lightcurves, using the time bin defined on the 'time bin slider'. This HID also 
 
 where **evt1** or **evt2** are cleaned event lists from the mentioned xray missions.
 When two eventlists **from the same mission** are given, they will be joined.
+

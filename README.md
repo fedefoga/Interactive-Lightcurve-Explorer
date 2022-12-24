@@ -10,8 +10,6 @@ The full spectrum *Emin/Emax* is mission dependent.
 On the bottom right panel it will display the hardness-intensity diagram (HID), with the hardness defined as the ratio of hard (*Ecut/Emax*) to soft (*Emin/Ecut*)
 lightcurves, using the time bin defined on the 'time bin slider'. This HID also can be modified by moving the 'Cutoff Energy slider' to see how the spectral shape changes.
 
-Widgets events key (ex, 'Esc' to reset) where left to their default behaviour according to matplotlib docs.
-
 # Prerequisites
 - Python 3.6+
 - Matplotlib 
@@ -20,7 +18,7 @@ Widgets events key (ex, 'Esc' to reset) where left to their default behaviour ac
 
 
 # Usage
-`python3 hid.py evt1 [evt2 evt3 ...]`
+`python3 hid.py evt1 [evt2]`
 
-where **evt1** and **evtX** are cleaned event lists from the mentioned xray missions.
-When two or more event list **from the same mission** are given, they will be joined.
+where **evt1** or **evt2** are cleaned event lists from the mentioned xray missions.
+When two eventlists **from the same mission** are given, they will be joined.

@@ -1,6 +1,5 @@
 # Interactive Lightcurve Explorer
 
-![Preview](https://github.com/fedefoga/Interactive-Lightcurve-Explorer/fig2.png)
 
 This tool makes light curve visualization more simple. 
 It takes a cleaned event list as input, from three common NASA/ESA missions: *NICER*, *NUSTAR* and *XMM-Newton*.
